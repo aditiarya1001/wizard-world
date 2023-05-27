@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Legendary Runes Free Trial";
+  src: url("/font/Legendary Runes Free Trial.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Legendary Runes Free Trial", sans-serif;
+  letter-spacing: 2px;
+}
+body {
+  background-image: url("./images/potter.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.nav-top {
+  display: block;
+  flex-direction: row;
+  margin: 5px auto;
+  padding: 10px;
+  opacity: 80%;
+}
+.navbar {
+  border-radius: 10px;
+}
+
+.bckg-color {
+  background-color: black;
+}
+.navbar-text {
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: right;
+  color: rgb(255, 174, 0);
+}
+
+
+
+.home-box-head {
+  position: relative;
+ 
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-box-head .welcome {
+  font-size: 4em;
+  text-align: center;
+  color: rgb(255, 174, 0);
+  transition: 0.3s;
+  cursor: default;
+  padding-top: 150px ;
+}
+.welcome:hover {
+  letter-spacing: 0.2em;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(243, 193, 85),
+      0 0 40px rgb(238, 200, 120), 0 0 50px rgb(238, 200, 120),
+      0 0 60px rgb(238, 200, 120), 0 0 70px rgb(238, 200, 120);
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px rgb(238, 200, 120),
+      0 0 40px rgb(238, 200, 120), 0 0 50px rgb(238, 200, 120),
+      0 0 60px rgb(238, 200, 120), 0 0 70px rgb(238, 200, 120),
+      0 0 80px rgb(238, 200, 120);
+  }
+}
+
+.options-box{
+  padding: 70px;
+}
+
+.nav-link {
+  background-color: none;
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+
