@@ -12,11 +12,12 @@
 }
 body {
   background-image: url("./images/potter.jpg");
-  background-size: cover;
-  background-repeat: repeat-y;
+  background-size:cover;
+  background-repeat: repeat;
 }
 
 .nav-top {
+  
   display: block;
   flex-direction: row;
   margin: 5px auto;
@@ -24,12 +25,13 @@ body {
   opacity: 80%;
 }
 .navbar {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, .90),
+    rgba(0, 0, 0, .90));
+    background-size: cover;
   border-radius: 10px;
 }
 
-.bckg-color {
-  background-color: black;
-}
 .navbar-text {
   font-size: 20px;
   justify-content: space-between;
@@ -41,7 +43,6 @@ body {
 
 .home-box-head {
   position: relative;
- 
   height: 100%;
   width: 100%;
   border-radius: 0 0 8px 0;
@@ -70,13 +71,13 @@ body {
 }
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(243, 193, 85),
-      0 0 40px rgb(238, 200, 120), 0 0 50px rgb(238, 200, 120),
-      0 0 60px rgb(238, 200, 120), 0 0 70px rgb(238, 200, 120);
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black,
+      0 0 40px black, 0 0 50px black,
+      0 0 60px black, 0 0 70px black;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px rgb(238, 200, 120),
+    text-shadow: 0 0 20px black, 0 0 30px rgb(238, 200, 120),
       0 0 40px rgb(238, 200, 120), 0 0 50px rgb(238, 200, 120),
       0 0 60px rgb(238, 200, 120), 0 0 70px rgb(238, 200, 120),
       0 0 80px rgb(238, 200, 120);
@@ -84,13 +85,70 @@ body {
 }
 
 .options-box{
-  padding: 70px;
+  padding: 100px;
+  padding-bottom: 200px;
 }
 
 .nav-link {
   background-color: none;
-  -webkit-animation: glowing 1s ease-in-out infinite alternate;
-  -moz-animation: glowing 1s ease-in-out infinite alternate;
-  animation: glowing 1s ease-in-out infinite alternate;
+  filter: drop-shadow(9px 9px 9px rgb(212, 148, 19));
+  transition: transform .5s;
 }
+
+.nav-link:hover{
+  transform: scale(1.5);
+}
+
+
+/* hogwarts-details/////////////////////////////////// */
+
+.hogwarts-details {
+  position: relative;
+  width: 100%;
+}
+
+.about-hogwarts div{
+  color: #f0a315;
+  filter: drop-shadow(9px 9px 9px rgb(17, 12, 2));
+}
+.about-hogwarts h1{
+  text-align: center;
+  color: #e66f01;
+  filter: drop-shadow(9px 9px 9px rgb(17, 12, 2));
+}
+
+.more-from-hogwarts{
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px;
+  filter: drop-shadow(9px 9px 9px rgb(238, 200, 120));
+}
+.more-from-hogwarts .more{
+  padding: 80px;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  min-width: 300px;
+  max-width: 350px;
+}
+.more-from-hogwarts .more h1{
+  color: #e98007;
+}
+.more-from-hogwarts img{
+  height: 50px;
+  width: 50px;
+
+}
+.more-from-hogwarts p{
+  color: #e98007;
+  text-align: center;
+}
+
 

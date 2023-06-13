@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Legendary Runes Free Trial";
+    src: url("/font/Legendary Runes Free Trial.otf");
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Legendary Runes Free Trial", sans-serif;
+    letter-spacing: 2px;
+  }
+  body {
+    background-image: url("./images/potter.jpg");
+    background-size:cover;
+    background-repeat: repeat;
+  }
+.about-hogwarts{
+    width: 100%;
+    height: 80vh;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    
+  }
+  .glow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(233, 155, 38), 0 0 10px rgb(233, 155, 38), 0 0 10px rgb(233, 155, 38),
+        0 0 10px rgb(233, 155, 38), 0 0 10px rgb(233, 155, 38),
+        0 0 10px rgb(233, 155, 38), 0 0 10px rgb(233, 155, 38);
+    }
+  
+    to {
+      text-shadow: 0 0 10px black, 0 0 10px rgb(238, 200, 120),
+        0 0 10px rgb(238, 200, 120), 0 0 10px rgb(238, 200, 120),
+        0 0 10px rgb(238, 200, 120), 0 0 10px rgb(238, 200, 120),
+        0 0 10px rgb(238, 200, 120);
+    }
+  }
