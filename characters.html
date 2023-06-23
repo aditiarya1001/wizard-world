@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,16 +12,35 @@
     />
     <link rel="stylesheet" href="./characters.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hogwarts</title>
-  </head>
+    <title>Harry Potter Characters</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="./characters.css">
+</head>
 <body>
-    <h1>Harry Potter Characters</h1>
-    <div class="box-main" id="main">
+
+<div class="container-fluid characters-container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-center mb-4">Harry Potter Characters</h1>
+      <div id="characters-list ">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        
+      </div>
     </div>
-    <div class="character-display" id="character">
-        <img src="https://raw.githubusercontent.com/fedeperin/harry-potter-api-english/main/images/argus_filch.png" width="100px" height="100px">
-        <div id="name">'</div> 
+    <div class="col-md-6 character-details">
+      <h2 class="text-center mb-4">Character Details</h2>
+      <div id="character-details"></div>
     </div>
-    <script src="./characters.js"></script>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./charscript.js"></script>
 </body>
 </html>

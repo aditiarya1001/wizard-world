@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Legendary Runes Free Trial";
+
+  src: url("./font/Cinzel-VariableFont_wght.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Legendary Runes Free Trial", sans-serif;
+  letter-spacing: 2px;
+}
+body {
+  background-image: url("./images/potter.jpg");
+  background-size:cover;
+  background-repeat: repeat;
+  
+}
+.about
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Legendary Runes Free Trial", sans-serif;
+}
+.para{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  color: #fdad00;
+  font-weight: 500;
+  font-size: large;
+ 
+}
+
+.glow {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0  1px rgb(241, 239, 241), 0 0  1px rgb(255, 255, 255), 0 0  1px rgb(231, 231, 231),
+      0 0  1px rgb(179, 176, 180), 0 0  1px rgb(247, 245, 248),
+      0 0  1px rgb(249, 248, 250), 0 0  1px rgb(239, 234, 243);
+  }
+
+  to {
+    text-shadow: 0 0 1px rgb(255, 255, 255)55, 255, 255, 0 0 1px rgb(255, 255, 255),
+      0 0 1px rgb(255, 255, 255), 0 0 1px rgb(247, 247, 247),
+      0 0 1px rgb(255, 255, 255), 0 0 1px rgb(247, 246, 245),
+      0 0 1px rgb(255, 254, 252);
+  }
+}
+
+.spell-btn-edit {
+
+  max-width: 100px;
+}
+
+.spell-details {
+  margin-top: 10px;
+  background-color: #fcfcfc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+.spell-button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #aa0544;
+  color: #850404;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

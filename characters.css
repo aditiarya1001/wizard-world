@@ -1,29 +1,42 @@
 @font-face {
     font-family: "Legendary Runes Free Trial";
-    src: url("/font/Legendary Runes Free Trial.otf");
+  
+    src: url("./font/Cinzel-VariableFont_wght.ttf");
   }
   
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Legendary Runes Free Trial", sans-serif;
+  
     letter-spacing: 2px;
   }
-  body {
-    background-image: url("./images/potter.jpg");
-    background-size:cover;
-    background-repeat: repeat;
+body {
+    background-image: url('./images/potter.jpg');
+    background-size: cover;
   }
-.box-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    width:70%;
-    padding: 1rem;
-}
-#character {
-    border: 5px solid black;
-    margin: 0.375rem;
-}
+  
+  .characters-container {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+  }
+  
+  .character-space{
+    padding: 10px;
+  }
+  .character-details {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 300px;
+  }
+  
+  .character-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .character-details p {
+    margin-bottom: 10px;
+  }
+  
